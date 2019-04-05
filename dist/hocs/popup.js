@@ -12,7 +12,7 @@ var __assign = (this && this.__assign) || function () {
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import cx from 'classnames';
-var POPUP_LAYER_ID = 'DebrisPopupLayer';
+var POPUP_LAYER_ID = 'PopupLayer';
 var createPopupLayer = function () {
     var node = document.createElement('div');
     node.id = POPUP_LAYER_ID;

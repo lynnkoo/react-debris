@@ -1,5 +1,10 @@
 # React Debris
 
+The repo will provide some price for react components.
+These components only have default layout, so you can set any styles for you like.
+
+**Warning:** The repo is in testing status now. I don't recommend using this in publishing production. But I hope to received suggestion for the repo, thanks.
+
 ## Install
   `npm install react-debris`
 
@@ -53,4 +58,32 @@ class App extends React.Component {
     )
   }
 }
+```
+
+And I recommend the repo [react-reasm](https://github.com/lynnkoo/react-reasm) when you using the popup component.
+
+``` javascript
+const injectComponents = {
+  testModal: (inject: any) => { 
+    const hooks = Popup.usePopupHooks()
+    inject(hooks)
+    return <Modal hooks={hooks} />
+  },
+}
+
+const TTestComponent = (props: any) => {
+  const show = () => {
+    props.testModal.show()
+  }
+  return (
+    <div>
+      <div onClick={show}>show</div>
+    </div>
+  )
+}
+const TestComponent = Injector({
+  ...,
+  components: injectComponents,
+})
+
 ```

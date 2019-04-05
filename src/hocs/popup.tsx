@@ -2,7 +2,7 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import cx from 'classnames'
 
-const POPUP_LAYER_ID = 'DebrisPopupLayer'
+const POPUP_LAYER_ID = 'PopupLayer'
 
 const createPopupLayer = (): HTMLElement => {
   const node = document.createElement('div')
